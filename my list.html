@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page - Netflix</title>
+    
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e50914;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between videos */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    overflow: hidden;
+}
+
+.video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Responsive Styles */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+/* For Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Our Special Page!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Specials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover Something Special</h2>
+            <p>Explore our curated collection of exclusive content.</p>
+            <a href="#" class="btn">Get Started</a>
+        </section>
+
+        <section class="content">
+            <!-- Your special content here -->
+            <h2>Featured Content</h2>
+            <div class="grid-container">
+                <!-- Example movie/TV show cards -->
+                <div class="card">
+                    <img src="images/img 30.jpg" alt="Movie Title">
+                    <h3>official trailer</h3>
+                    <p></p>
+</p>
+                </div>
+                <div class="card">
+                    <img src="images/img 40.jpg" alt="Movie Title">
+                    <h3>Max worrio</h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 600.jpg" alt="Movie Title">
+                    <h3>a simple lie</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 50.jpg" alt="Movie Title">
+                    <h3</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 60.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 70.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 80.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 90.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 100.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 200.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 300.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 400.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                <div class="card">
+                    <img src="img 500.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 600.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="img 800.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="images/img 11.jpg" alt="Movie Title">
+                    <h3></h3>
+                    <p>.</p>
+                </div>
+                
+                <!-- Repeat as needed -->
+            </div>
+        </section>
+       
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 Netflix</p>
+    </footer>
+</body>
+</html>

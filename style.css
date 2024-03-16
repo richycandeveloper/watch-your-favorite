@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .logo {
+    width: 150px; /* Adjust width as needed */
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image doesn't have extra space underneath */
+  }
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .language-dropdown select {
+    padding: 8px 12px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: black; /* Background color */
+    color:red; /* Text color */
+  }
+  
+  .language-dropdown select:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  /* Hamburger menu styles */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #000;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+
+  
+  .banner {
+    background-image: url('images/netflix\ 1\ backgroung\ img');
+    background-size: cover;
+    color: white;
+    padding: 100px 40px;
+    text-align: center;
+  }
+  .banner {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff0f2d;
+  }
+
+
+  
+  .faq-section {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    display: none; /* Hide the answer by default */
+  }
+
+  .faq-toggle {
+    display: none; /* Hide the checkbox input */
+  }
+
+  /* Styling for the checkbox toggle */
+  .faq-toggle + .faq-question:before {
+    content: '+';
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .faq-toggle:checked + .faq-question:before {
+    content: '-';
+  }
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  /* Responsive Styles */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .grid-container {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+/* For Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+  .grid-container {
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}

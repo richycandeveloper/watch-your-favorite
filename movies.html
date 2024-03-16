@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone - Movies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting a background color and centering the navigation */
+header {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styling the navigation links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+/* Changing the color of links on hover */
+.nav-links a:hover {
+  color: #ff0000; /* Choose your desired hover color */
+}
+
+/* Adding some margin to the top of the nav links */
+.nav-links {
+  margin-top: 10px;
+}
+
+
+.movies {
+    padding: 50px 0;
+    background-color: #000;
+    
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie {
+    text-align: center;
+  }
+  
+  .movie img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie img:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  h2{
+    text-align:center ;
+    color:#fff ;
+  }
+  /* Responsive Styles */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+/* For Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+}
+</style>
+<body>
+  <header>
+    <nav>
+      
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="movies.html">Movies</a>
+    
+      </div>
+    </nav>
+    </header>
+    <section class="movies">
+        <h2>Popular Movies</h2><br><br>
+        <div class="movie-list">
+          <div class="movie">
+            <img src="images/img 1.jpg" alt="Movie 1">
+            <h3><button>the living dead</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 2 .jpg" alt="Movie 2">
+            <h3><button>king of jungles</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 3.jpg" alt="Movie 1">
+            <h3><button>the amdioha</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 4.jpg " alt="Movie 1">
+            <h3><button>the movin box</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 5.jpg" alt="Movie 1">
+            <h3><button>dead aprature</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 6.jpg" alt="Movie 1">
+            <h3><button>ckisom the lover boy</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 7.jpg" alt="Movie 1">
+            <h3><button>american gangstar</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 8.jpg" alt="Movie 1">
+            <h3><button>god of the living and the  dead 1</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 10.jpg" alt="Movie 1">
+            <h3><button>the ginger</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 11.jpg" alt="Movie 1">
+            <h3><button>bad boys in campusu</button></h3>
+          </div>
+          
+          <div class="movie">
+            <img src="images/img 13.jpg" alt="Movie 1">
+            <h3>life of  a coder</h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 14.jpg" alt="Movie 1">
+            <h3><button>the big jango</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 15.jpg" alt="Movie 1">
+            <h3><button>chikago</button></h3>
+          </div>
+          <div class="movie">
+            <img src="images/img 16.jpg" alt="Movie 1">
+            <h3><button>henekin</button></h3>
+          </div>
+</body>
+</html>
